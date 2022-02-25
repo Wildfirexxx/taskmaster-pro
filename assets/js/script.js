@@ -277,16 +277,6 @@ var auditTask = function(taskEl) {
   }
 };
 
-setInterval(function() {
-  $(".card .list-group-item").each(function(index, el){
-    auditTask(el);
-  })
-}, 5000);
-
-setInterval(function() {
-  // code to execute
-}, (1000 * 60) * 30);
-
 
 
 
@@ -302,8 +292,6 @@ $("#remove-tasks").on("click", function () {
   }
   saveTasks();
 });
-
-
 
 // load tasks for the first time
 loadTasks();
